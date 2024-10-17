@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PROJETOJS.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Loja Online</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo">
+                    <a href="#catalogo-produtos" id="linkCatalogo" >
+                    <!-- Esse id dentro da tag de link é utilizado para direcionar a página ao catálogo de produtos, sempre que os elementos que contenham esse id sejam clicados.-->
+                    <img src="https://e7.pngegg.com/pngimages/195/304/png-clipart-visual-studio-code-logo-thumbnail-tech-companies.png" alt="" ><!-- esse Li é usado para colocar a logo! Toda vez que clicado, retorna para o catálogo de produtos-->
+                    </a>
+                </li>
+
+                <li id="cadastroUsuariosLi"><a href="#cadastro-usuarios">Cadastro de Usuários</a></li>
+
+                <li id="cadastroProdutosLi"><a href="#cadastro-produtos">Cadastro de Produtos</a></li>
+
+                <li id="catalogoProdutosLi"><a href="#catalogo-produtos" id="linkCatalogo" >Catálogo de Produtos</a></li>
+
+                <li id="carrinhoLi"><a href="#carrinho">Carrinho de Compras <i class="fas fa-shopping-cart"></i>
+                </a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro-usuarios">
+            <h2>Cadastro de Usuários</h2>
+            <form>
+                <label for="nome-usuario">Nome:</label>
+                <input type="text" id="nome-usuario" required>
+
+                <label for="email-usuario">Email:</label>
+                <input type="email" id="email-usuario" required>
+
+                <button type="submit">Cadastrar Usuário</button>
+            </form>
+        </section>
+        <section id="cadastro-produtos">
+            <h2>Cadastro de Produtos</h2>
+            <form>
+                <label for="nome-produto">Nome do Produto:</label>
+                <input type="text" id="nome-produto" required>
+                
+                <label for="preco-produto">Preço:</label>
+                <input type="text" id="preco-produto" required>
+                <img src="" alt="" width="" height="">                
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </section>
+
+
+        <section id="catalogo-produtos">
+            <h2>Catálogo de Produtos</h2>
+            
+            <div id="resultado-produtos" class="resultado"></div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Carrinho de Compras </h2>
+            <ul id="lista-carrinho"></ul>
+            <p id="mensagem-vazio">Seu carrinho de compras está vazio.</p>
+            
+            <p id="totalFinal"> </p>
+            <p id = btnFinalizar></p>
+            <p id="btnLimparCarrinho"></p>
+        </section>
+        <div id="mensagem-alerta" style="display: none;"></div>
+
+
+        <div id="pedidoRealizado" style="display: none;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Loja Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+    <script src="PROJETOJS.js"></script>
+</body>
+</html>

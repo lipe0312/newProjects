@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em; /* Tamanho da fonte reduzido */
+    letter-spacing: 0.5px; /* Menos espaçamento entre letras */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+nav ul li img {
+    width: 30px; /* Ajuste o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    vertical-align: middle; /* Alinha a imagem ao centro do texto */
+    margin: 0 10px; /* Adiciona um espaçamento ao redor da imagem */
+    border-radius: 5px; /* Adiciona cantos levemente arredondados */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+main {
+    padding: 20px;
+    padding: 60px 20px; }
+
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px; /* Aumentar o padding */
+    margin-bottom: 25px; /* Aumentar o espaço entre os itens */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.produto img {
+    width: 100px; /* Definir uma largura fixa para a imagem */
+    height: auto; /* Manter a proporção */
+    border-radius: 5px;
+    margin-right: 20px; /* Aumentar o espaçamento à direita da imagem */
+}
+
+.produto h3, .produto p, .produto h4 {
+    flex-basis: 70%; /* Definir espaço flexível para os textos */
+}
+
+.produto button {
+    flex-basis: 20%; /* Ajustar o tamanho do botão */
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Aumentar o padding para deixar o botão mais espaçado */
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+#carrinho {
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho h2 {
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #28a745;
+    margin-bottom: 15px;
+}
+
+#lista-carrinho {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-carrinho li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+#lista-carrinho li:last-child {
+    border-bottom: none;
+}
+
+#lista-carrinho img {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#lista-carrinho button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+#lista-carrinho button:hover {
+    background-color: #c82333;
+}
+
+#totalFinal {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+}
+
+#btnFinalizar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#btnFinalizar button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btnFinalizar button:hover {
+    background-color: #218838;
+}
+
+#mensagem-alerta {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+#pedidoRealizado {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #218838;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
